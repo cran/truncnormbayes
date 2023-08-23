@@ -1,11 +1,13 @@
 Package: truncnormbayes
 Title: Estimates Moments for a Truncated Normal Distribution using
         'Stan'
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: c(
-  person("Mika", "Braginsky", role = c("aut", "cre"), email = "mika.br@gmail.com"),
+  person("Mika", "Braginsky", role = c("aut"), email = "mika.br@gmail.com"),
   person("Leon", "Tran", role = "aut", email = "leontk@stanford.edu"),
-	person("Maya", "Mathur", role = "ctb", email = "mmathur@stanford.edu"))
+  person("Maya", "Mathur", role = "ctb", email = "mmathur@stanford.edu"),
+  person("Peter", "Solymos", email = "peter@analythium.io", role = c("cre", "ctb"), comment = c(ORCID = "0000-0001-7337-1740"))
+  )
 Description: Finds the posterior modes for the mean and standard deviation for a
   truncated normal distribution with one or two known truncation points.
   The method used extends Bayesian methods for parameter estimation for a singly
@@ -14,11 +16,12 @@ Description: Finds the posterior modes for the mean and standard deviation for a
   data with applications to operational risk measurement".
   <doi:10.1080/14697688.2012.752103>). This package additionally allows for a
   doubly truncated normal distribution.
-URL: https://github.com/leonkt/truncnormbayes
-BugReports: https://github.com/leonkt/truncnormbayes/issues
+URL: https://github.com/mathurlabstanford/truncnormbayes,
+        https://mathurlabstanford.github.io/truncnormbayes/
+BugReports: https://github.com/mathurlabstanford/truncnormbayes/issues
 License: GPL (>= 3)
 Encoding: UTF-8
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Biarch: true
 RdMacros: Rdpack
 Depends: R (>= 3.4.0)
@@ -31,10 +34,11 @@ Suggests: testthat (>= 3.0.0), truncnorm (>= 1.0), withr (>= 2.5.0)
 Config/testthat/edition: 3
 SystemRequirements: GNU make
 NeedsCompilation: yes
-Packaged: 2022-09-08 02:37:09 UTC; mbraginsky
-Author: Mika Braginsky [aut, cre],
+Packaged: 2023-08-23 02:06:23 UTC; root
+Author: Mika Braginsky [aut],
   Leon Tran [aut],
-  Maya Mathur [ctb]
-Maintainer: Mika Braginsky <mika.br@gmail.com>
+  Maya Mathur [ctb],
+  Peter Solymos [cre, ctb] (<https://orcid.org/0000-0001-7337-1740>)
+Maintainer: Peter Solymos <peter@analythium.io>
 Repository: CRAN
-Date/Publication: 2022-09-09 10:30:02 UTC
+Date/Publication: 2023-08-23 07:30:02 UTC
